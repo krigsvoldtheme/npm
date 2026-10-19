@@ -1,0 +1,20 @@
+/* Krigsvold Dark 1.0.0. MIT. */
+pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
+code.hljs { padding: 3px 5px; }
+.hljs { background: #061325; color: #EEF8FA; }
+.hljs-subst { color: #EEF8FA; }
+.hljs-keyword, .hljs-selector-tag, .hljs-literal { color: #9ED5E6; }
+.hljs-string, .hljs-regexp, .hljs-addition { color: #A6CFB5; }
+.hljs-number { color: #F0A4AF; }
+.hljs-title, .hljs-function, .hljs-title.function_ { color: #C2E4EF; }
+.hljs-type, .hljs-built_in, .hljs-title.class_ { color: #D9B876; }
+.hljs-variable, .hljs-params { color: #EEF8FA; }
+.hljs-comment, .hljs-quote { color: #B3CCD5; }
+.hljs-symbol, .hljs-bullet { color: #C6B6DB; }
+.hljs-tag, .hljs-name { color: #9ED5E6; }
+.hljs-attr, .hljs-attribute { color: #D9B876; }
+.hljs-deletion { color: #F0A4AF; }
+.hljs-meta { color: #C6B6DB; }
+.hljs-operator, .hljs-punctuation { color: #B3CCD5; }
+.hljs-comment, .hljs-quote, .hljs-emphasis { font-style: italic; }
+.hljs-strong { font-weight: bold; }

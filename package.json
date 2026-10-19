@@ -1,0 +1,54 @@
+{
+  "name": "@krigsvoldtheme/theme",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test scripts/verify.test.mjs",
+    "prepack": "npm run build && npm test"
+  },
+  "description": "Krigsvold Light and Dark CSS, JSON tokens, and highlight.js styles",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./css": "./dist/theme.css",
+    "./light.css": "./dist/light.css",
+    "./dark.css": "./dist/dark.css",
+    "./tokens.json": "./dist/tokens.json",
+    "./light.json": "./dist/light.json",
+    "./dark.json": "./dist/dark.json",
+    "./highlight-light.css": "./dist/highlight-light.css",
+    "./highlight-dark.css": "./dist/highlight-dark.css"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krigsvoldtheme/npm.git"
+  },
+  "homepage": "https://krigsvoldtheme.dev/",
+  "keywords": [
+    "krigsvold",
+    "theme",
+    "colors",
+    "design-tokens",
+    "highlight.js"
+  ]
+}

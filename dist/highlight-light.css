@@ -1,0 +1,20 @@
+/* Krigsvold Light 1.0.0. MIT. */
+pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
+code.hljs { padding: 3px 5px; }
+.hljs { background: #FBFAF7; color: #17202A; }
+.hljs-subst { color: #17202A; }
+.hljs-keyword, .hljs-selector-tag, .hljs-literal { color: #286A9D; }
+.hljs-string, .hljs-regexp, .hljs-addition { color: #35644E; }
+.hljs-number { color: #9A3542; }
+.hljs-title, .hljs-function, .hljs-title.function_ { color: #123456; }
+.hljs-type, .hljs-built_in, .hljs-title.class_ { color: #79571F; }
+.hljs-variable, .hljs-params { color: #17202A; }
+.hljs-comment, .hljs-quote { color: #56616C; }
+.hljs-symbol, .hljs-bullet { color: #655477; }
+.hljs-tag, .hljs-name { color: #286A9D; }
+.hljs-attr, .hljs-attribute { color: #79571F; }
+.hljs-deletion { color: #9A3542; }
+.hljs-meta { color: #655477; }
+.hljs-operator, .hljs-punctuation { color: #56616C; }
+.hljs-comment, .hljs-quote, .hljs-emphasis { font-style: italic; }
+.hljs-strong { font-weight: bold; }
