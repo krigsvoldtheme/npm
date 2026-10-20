@@ -1,0 +1,94 @@
+{
+  "web-core": {
+    "applied": [
+      "colors",
+      "typography variables",
+      "spacing",
+      "shape",
+      "depth",
+      "interaction variables"
+    ],
+    "optional": [
+      "font loading",
+      "element typography",
+      "components"
+    ]
+  },
+  "astro": {
+    "applied": [
+      "web-core",
+      "document shell",
+      "container",
+      "section heading",
+      "card",
+      "button"
+    ],
+    "hostOwned": [
+      "navigation",
+      "content",
+      "consent",
+      "analytics",
+      "personal identity"
+    ]
+  },
+  "vim": {
+    "applied": [
+      "colors",
+      "syntax"
+    ],
+    "separateConfiguration": [
+      "monospace font"
+    ],
+    "unsupported": [
+      "web layout",
+      "proportional typography"
+    ]
+  },
+  "emacs": {
+    "applied": [
+      "colors",
+      "syntax"
+    ],
+    "separateConfiguration": [
+      "font roles"
+    ],
+    "unsupported": [
+      "web layout"
+    ]
+  },
+  "terminal": {
+    "applied": [
+      "colors"
+    ],
+    "separateConfiguration": [
+      "monospace font"
+    ],
+    "unsupported": [
+      "web layout",
+      "serif",
+      "sans"
+    ]
+  },
+  "firefox": {
+    "applied": [
+      "browser chrome colors"
+    ],
+    "unsupported": [
+      "fonts",
+      "website content",
+      "spacing",
+      "components"
+    ]
+  },
+  "chrome": {
+    "applied": [
+      "browser chrome colors"
+    ],
+    "unsupported": [
+      "fonts",
+      "website content",
+      "spacing",
+      "components"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+/* Origin: krigsvold.org. Variables only; no element styles or font downloads. */
+:root, [data-krigsvold] {
+  --krigsvold-color-navy-950: #061325;
+  --krigsvold-color-navy-900: #0a1d35;
+  --krigsvold-color-navy-800: #123456;
+  --krigsvold-color-blue-600: #286a9d;
+  --krigsvold-color-ice-400: #9ed5e6;
+  --krigsvold-color-ice-200: #d9eef4;
+  --krigsvold-color-ice-100: #eef8fa;
+  --krigsvold-color-paper: #fbfaf7;
+  --krigsvold-color-ink: #17202a;
+  --krigsvold-color-muted: #56616c;
+  --krigsvold-color-rule: #d9dee2;
+  --krigsvold-color-gold: #b58a3b;
+  --krigsvold-font-serif: 'Roboto Slab', Georgia, serif;
+  --krigsvold-font-display: 'Roboto Slab', Georgia, serif;
+  --krigsvold-font-sans: 'Roboto', Arial, sans-serif;
+  --krigsvold-font-mono: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --krigsvold-space-1: .25rem;
+  --krigsvold-space-2: .5rem;
+  --krigsvold-space-3: .75rem;
+  --krigsvold-space-4: 1rem;
+  --krigsvold-space-6: 1.5rem;
+  --krigsvold-space-8: 2rem;
+  --krigsvold-space-12: 3rem;
+  --krigsvold-space-16: 4rem;
+  --krigsvold-space-24: 6rem;
+  --krigsvold-reading-width: 760px;
+  --krigsvold-content-width: 1320px;
+  --krigsvold-archive-width: 1320px;
+  --krigsvold-radius-sm: .15rem;
+  --krigsvold-radius-md: .3rem;
+  --krigsvold-radius-lg: .4rem;
+  --krigsvold-radius-control: .15rem;
+  --krigsvold-radius-card: 0;
+  --krigsvold-shadow-sm: 0 10px 35px rgb(0 0 0 / 12%);
+  --krigsvold-shadow-md: 0 18px 44px rgb(6 19 37 / 18%);
+  --krigsvold-shadow-lg: 0 24px 65px rgb(10 29 53 / 12%);
+  --krigsvold-shadow-card: none;
+  --krigsvold-transition-ui: .15s ease-in;
+  --krigsvold-motion-duration: .15s;
+  --krigsvold-text-body: 1.06rem;
+  --krigsvold-text-h1: clamp(2.8rem, 6vw, 5.5rem);
+  --krigsvold-text-h2: 2.1rem;
+  --krigsvold-text-h3: 1.42rem;
+  --krigsvold-text-display: clamp(3.4rem, 7vw, 6.8rem);
+  --krigsvold-text-section: clamp(2rem, 4vw, 3.5rem);
+  --krigsvold-leading-body: 1.65;
+  --krigsvold-leading-heading: 1.13;
+  --krigsvold-leading-display: .98;
+  --krigsvold-weight-heading: 700;
+  --krigsvold-tracking-heading: -.025em;
+  --krigsvold-tracking-display: -.045em;
+  --krigsvold-tracking-label: .16em;
+  --krigsvold-tracking-button: .035em;
+  --krigsvold-border-width: 1px;
+  --krigsvold-focus-width: 3px;
+  --krigsvold-focus-gap: 3px;
+  --krigsvold-gutter: .75rem;
+  --krigsvold-section-space: clamp(4.5rem, 8vw, 7.5rem);
+  --krigsvold-control-height: 2.75rem;
+  --krigsvold-control-padding: .9rem;
+  --krigsvold-button-padding: .625rem 1.5rem;
+  --krigsvold-text-button: .75rem;
+  --krigsvold-leading-button: 1.667;
+  --krigsvold-divider-width: 3rem;
+  --krigsvold-divider-thickness: 3px;
+  --krigsvold-link-underline-offset: .18em;
+  --krigsvold-hero-overlay: linear-gradient(90deg, rgba(3,15,30,.93) 0%, rgba(6,27,51,.76) 52%, rgba(7,28,48,.42) 100%);
+  --krigsvold-breakpoint-sm: 576px;
+  --krigsvold-breakpoint-md: 768px;
+  --krigsvold-breakpoint-lg: 992px;
+  --krigsvold-breakpoint-xl: 1200px;
+  --krigsvold-breakpoint-xxl: 1400px;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root, [data-krigsvold] { --krigsvold-transition-ui: 0s; --krigsvold-motion-duration: 0s; }
+}

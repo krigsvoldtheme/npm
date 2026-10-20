@@ -5,4 +5,6 @@ export declare const dark: Theme;
 export declare const version: string;
 export declare const heritage: Readonly<Record<string,string>>;
 export declare const design: { readonly radius: Readonly<Record<string,string>>; readonly spacing: Readonly<Record<string,string>>; readonly fonts: Readonly<Record<string,string>> };
+export declare const foundation: { readonly origin: string; readonly tokens: Readonly<Record<string,string>>; readonly typographyRoles: Readonly<Record<string,unknown>> };
+export declare const capabilities: Readonly<Record<string,unknown>>;
 export default themes;
