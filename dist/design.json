@@ -1,0 +1,49 @@
+{
+  "radius": {
+    "sm": ".15rem",
+    "md": ".3rem",
+    "lg": ".4rem",
+    "control": ".15rem",
+    "card": "0"
+  },
+  "spacing": {
+    "1": ".25rem",
+    "2": ".5rem",
+    "3": ".75rem",
+    "4": "1rem",
+    "6": "1.5rem",
+    "8": "2rem",
+    "12": "3rem",
+    "16": "4rem",
+    "24": "6rem"
+  },
+  "fonts": {
+    "serif": "'Roboto Slab', Georgia, serif",
+    "sans": "'Roboto', Arial, sans-serif",
+    "display": "'Roboto Slab', Georgia, serif",
+    "mono": "'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+    "ui": "'Roboto', Arial, sans-serif",
+    "code": "'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+  },
+  "widths": {
+    "reading-width": "760px",
+    "content-width": "1320px",
+    "archive-width": "1320px"
+  },
+  "shadows": {
+    "shadow-sm": "0 10px 35px rgb(0 0 0 / 12%)",
+    "shadow-md": "0 18px 44px rgb(6 19 37 / 18%)",
+    "shadow-lg": "0 24px 65px rgb(10 29 53 / 12%)"
+  },
+  "motion": {
+    "transition": ".15s ease-in",
+    "reduced": "0s"
+  },
+  "breakpoints": {
+    "sm": "576px",
+    "md": "768px",
+    "lg": "992px",
+    "xl": "1200px",
+    "xxl": "1400px"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "family": "krigsvold",
   "label": "Krigsvold",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "themes": {
     "light": {
       "id": "krigsvold-light",
@@ -210,24 +210,284 @@
   },
   "design": {
     "radius": {
-      "sm": "2px",
-      "md": "4px",
-      "lg": "8px",
-      "xl": "12px"
+      "sm": ".15rem",
+      "md": ".3rem",
+      "lg": ".4rem",
+      "control": ".15rem",
+      "card": "0"
     },
     "spacing": {
-      "1": "4px",
-      "2": "8px",
-      "3": "12px",
-      "4": "16px",
-      "6": "24px",
-      "8": "32px"
+      "1": ".25rem",
+      "2": ".5rem",
+      "3": ".75rem",
+      "4": "1rem",
+      "6": "1.5rem",
+      "8": "2rem",
+      "12": "3rem",
+      "16": "4rem",
+      "24": "6rem"
     },
     "fonts": {
-      "ui": "Roboto, system-ui, sans-serif",
-      "display": "\"Roboto Slab\", Georgia, serif",
-      "code": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+      "serif": "'Roboto Slab', Georgia, serif",
+      "sans": "'Roboto', Arial, sans-serif",
+      "display": "'Roboto Slab', Georgia, serif",
+      "mono": "'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+      "ui": "'Roboto', Arial, sans-serif",
+      "code": "'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+    },
+    "widths": {
+      "reading-width": "760px",
+      "content-width": "1320px",
+      "archive-width": "1320px"
+    },
+    "shadows": {
+      "shadow-sm": "0 10px 35px rgb(0 0 0 / 12%)",
+      "shadow-md": "0 18px 44px rgb(6 19 37 / 18%)",
+      "shadow-lg": "0 24px 65px rgb(10 29 53 / 12%)"
+    },
+    "motion": {
+      "transition": ".15s ease-in",
+      "reduced": "0s"
+    },
+    "breakpoints": {
+      "sm": "576px",
+      "md": "768px",
+      "lg": "992px",
+      "xl": "1200px",
+      "xxl": "1400px"
     }
   },
-  "kind": "npm"
+  "kind": "npm",
+  "foundation": {
+    "origin": "https://krigsvold.org/",
+    "sourceRepository": "basuhoward/krigsvold.org",
+    "sourceCommit": "e92e989b6e850b3a9cd8fbb565edb7eba6d3a6f7",
+    "sourceFiles": [
+      "assets/css/krigsvold.css",
+      "_includes/head.html",
+      "assets/css/material-kit.css",
+      "assets/scss/material-kit/bootstrap/_variables.scss"
+    ],
+    "tokens": {
+      "color-navy-950": "#061325",
+      "color-navy-900": "#0a1d35",
+      "color-navy-800": "#123456",
+      "color-blue-600": "#286a9d",
+      "color-ice-400": "#9ed5e6",
+      "color-ice-200": "#d9eef4",
+      "color-ice-100": "#eef8fa",
+      "color-paper": "#fbfaf7",
+      "color-ink": "#17202a",
+      "color-muted": "#56616c",
+      "color-rule": "#d9dee2",
+      "color-gold": "#b58a3b",
+      "font-serif": "'Roboto Slab', Georgia, serif",
+      "font-display": "'Roboto Slab', Georgia, serif",
+      "font-sans": "'Roboto', Arial, sans-serif",
+      "font-mono": "'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+      "space-1": ".25rem",
+      "space-2": ".5rem",
+      "space-3": ".75rem",
+      "space-4": "1rem",
+      "space-6": "1.5rem",
+      "space-8": "2rem",
+      "space-12": "3rem",
+      "space-16": "4rem",
+      "space-24": "6rem",
+      "reading-width": "760px",
+      "content-width": "1320px",
+      "archive-width": "1320px",
+      "radius-sm": ".15rem",
+      "radius-md": ".3rem",
+      "radius-lg": ".4rem",
+      "radius-control": ".15rem",
+      "radius-card": "0",
+      "shadow-sm": "0 10px 35px rgb(0 0 0 / 12%)",
+      "shadow-md": "0 18px 44px rgb(6 19 37 / 18%)",
+      "shadow-lg": "0 24px 65px rgb(10 29 53 / 12%)",
+      "shadow-card": "none",
+      "transition-ui": ".15s ease-in",
+      "motion-duration": ".15s",
+      "text-body": "1.06rem",
+      "text-h1": "clamp(2.8rem, 6vw, 5.5rem)",
+      "text-h2": "2.1rem",
+      "text-h3": "1.42rem",
+      "text-display": "clamp(3.4rem, 7vw, 6.8rem)",
+      "text-section": "clamp(2rem, 4vw, 3.5rem)",
+      "leading-body": "1.65",
+      "leading-heading": "1.13",
+      "leading-display": ".98",
+      "weight-heading": "700",
+      "tracking-heading": "-.025em",
+      "tracking-display": "-.045em",
+      "tracking-label": ".16em",
+      "tracking-button": ".035em",
+      "border-width": "1px",
+      "focus-width": "3px",
+      "focus-gap": "3px",
+      "gutter": ".75rem",
+      "section-space": "clamp(4.5rem, 8vw, 7.5rem)",
+      "control-height": "2.75rem",
+      "control-padding": ".9rem",
+      "button-padding": ".625rem 1.5rem",
+      "text-button": ".75rem",
+      "leading-button": "1.667",
+      "divider-width": "3rem",
+      "divider-thickness": "3px",
+      "link-underline-offset": ".18em",
+      "hero-overlay": "linear-gradient(90deg, rgba(3,15,30,.93) 0%, rgba(6,27,51,.76) 52%, rgba(7,28,48,.42) 100%)",
+      "breakpoint-sm": "576px",
+      "breakpoint-md": "768px",
+      "breakpoint-lg": "992px",
+      "breakpoint-xl": "1200px",
+      "breakpoint-xxl": "1400px"
+    },
+    "typographyRoles": {
+      "serif": {
+        "family": "Roboto Slab",
+        "usage": "Editorial headings, ledes, quotations",
+        "weights": [
+          400,
+          700
+        ]
+      },
+      "display": {
+        "family": "Roboto Slab",
+        "usage": "Hero and page titles, section headings",
+        "weights": [
+          400,
+          700
+        ]
+      },
+      "sans": {
+        "family": "Roboto",
+        "usage": "Body prose, navigation, controls, tables, metadata",
+        "weights": [
+          400,
+          500,
+          700
+        ],
+        "styles": [
+          "normal",
+          "italic"
+        ]
+      },
+      "mono": {
+        "family": "Roboto Mono",
+        "usage": "Code, terminal text, keyboard notation",
+        "weights": [
+          400,
+          500,
+          700
+        ],
+        "styles": [
+          "normal",
+          "italic"
+        ],
+        "provenance": "New redistributable companion selected for the Roboto family"
+      }
+    },
+    "normalization": {
+      "spacing": "Quarter-rem scale organizing the source site\u2019s recurring spacing; values are not taken from the theme demo.",
+      "focus": "Explicit 3px visible focus ring and offset added for reusable controls.",
+      "controlHeight": "44px minimum interaction target added to the generic primitives.",
+      "readingWidth": "760px text measure from source hero/subtitle limits, generalized to reading containers.",
+      "card": "Flat editorial card from .work-card, with a 3px top rule; larger feature shadows remain separately available.",
+      "motion": "Source Material Kit .15s ease-in transition, reduced to zero when requested."
+    }
+  },
+  "capabilities": {
+    "web-core": {
+      "applied": [
+        "colors",
+        "typography variables",
+        "spacing",
+        "shape",
+        "depth",
+        "interaction variables"
+      ],
+      "optional": [
+        "font loading",
+        "element typography",
+        "components"
+      ]
+    },
+    "astro": {
+      "applied": [
+        "web-core",
+        "document shell",
+        "container",
+        "section heading",
+        "card",
+        "button"
+      ],
+      "hostOwned": [
+        "navigation",
+        "content",
+        "consent",
+        "analytics",
+        "personal identity"
+      ]
+    },
+    "vim": {
+      "applied": [
+        "colors",
+        "syntax"
+      ],
+      "separateConfiguration": [
+        "monospace font"
+      ],
+      "unsupported": [
+        "web layout",
+        "proportional typography"
+      ]
+    },
+    "emacs": {
+      "applied": [
+        "colors",
+        "syntax"
+      ],
+      "separateConfiguration": [
+        "font roles"
+      ],
+      "unsupported": [
+        "web layout"
+      ]
+    },
+    "terminal": {
+      "applied": [
+        "colors"
+      ],
+      "separateConfiguration": [
+        "monospace font"
+      ],
+      "unsupported": [
+        "web layout",
+        "serif",
+        "sans"
+      ]
+    },
+    "firefox": {
+      "applied": [
+        "browser chrome colors"
+      ],
+      "unsupported": [
+        "fonts",
+        "website content",
+        "spacing",
+        "components"
+      ]
+    },
+    "chrome": {
+      "applied": [
+        "browser chrome colors"
+      ],
+      "unsupported": [
+        "fonts",
+        "website content",
+        "spacing",
+        "components"
+      ]
+    }
+  }
 }
