@@ -72,6 +72,14 @@
   --krigsvold-breakpoint-lg: 992px;
   --krigsvold-breakpoint-xl: 1200px;
   --krigsvold-breakpoint-xxl: 1400px;
+  --krigsvold-layout-gap: 2rem;
+  --krigsvold-layout-gap-small: 1rem;
+  --krigsvold-layout-gap-large: 3rem;
+  --krigsvold-layout-sidebar-width: 20rem;
+  --krigsvold-layout-main-min: 30rem;
+  --krigsvold-layout-grid-min: 20rem;
+  --krigsvold-layout-split-min: 22rem;
+  --krigsvold-layout-section-space: clamp(4.5rem, 8vw, 7.5rem);
 }
 @media (prefers-reduced-motion: reduce) {
   :root, [data-krigsvold] { --krigsvold-transition-ui: 0s; --krigsvold-motion-duration: 0s; }

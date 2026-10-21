@@ -1,6 +1,6 @@
 {
   "name": "@krigsvold/theme",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": false,
   "type": "module",
   "license": "MIT",
@@ -46,7 +46,9 @@
     "./design.json": "./dist/design.json",
     "./capabilities.json": "./dist/capabilities.json",
     "./package.json": "./package.json",
-    "./legacy.css": "./dist/legacy.css"
+    "./legacy.css": "./dist/legacy.css",
+    "./layout.css": "./dist/layout.css",
+    "./layout.json": "./dist/layout.json"
   },
   "publishConfig": {
     "access": "public"

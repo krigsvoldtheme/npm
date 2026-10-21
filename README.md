@@ -39,6 +39,10 @@ Edit `source.json` here; run `npm ci --ignore-scripts`, `npm run build`, `npm te
 
 The `capabilities` export records what each integration applies, requires separate configuration for, or cannot support. A browser color theme does not change fonts. Editors and terminals use the monospace role only where their host allows it.
 
-Registry publication is pending. Before publication install the versioned archive with `npm install ./krigsvold-theme-2.0.0.tgz`. The npm scope is `krigsvold`, independently of the `krigsvoldtheme` GitHub organization. The old `@krigsvoldtheme/theme` name existed in prepared archives but was not published; existing color APIs are preserved in this renamed package. Version 2 makes the broader design contract and originating-site typography explicit.
+The npm scope is `krigsvold`. Install the published core with `npm install @krigsvold/theme`. Package versions are independent of application-port versions.
 
 Application port generators in `krigsvoldtheme/krigsvoldtheme` consume this package. They must not regenerate it. CI never publishes automatically.
+
+## Layouts
+
+Version 2.1 adds optional [`layout.css`](docs/layout.md), the `layout` JavaScript export, and `layout.json`. Layout primitives cover containers, vertical stacks, wrapping clusters, bounded grids, sidebars, and paired regions. Import `@krigsvold/theme/full.css` for the complete styling layer or add `@krigsvold/theme/layout.css` after `foundation.css` for structural classes alone. See [source observations and responsive rules](docs/layout.md).
