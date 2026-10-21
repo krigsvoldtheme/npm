@@ -72,6 +72,14 @@
   --breakpoint-lg: var(--krigsvold-breakpoint-lg);
   --breakpoint-xl: var(--krigsvold-breakpoint-xl);
   --breakpoint-xxl: var(--krigsvold-breakpoint-xxl);
+  --layout-gap: var(--krigsvold-layout-gap);
+  --layout-gap-small: var(--krigsvold-layout-gap-small);
+  --layout-gap-large: var(--krigsvold-layout-gap-large);
+  --layout-sidebar-width: var(--krigsvold-layout-sidebar-width);
+  --layout-main-min: var(--krigsvold-layout-main-min);
+  --layout-grid-min: var(--krigsvold-layout-grid-min);
+  --layout-split-min: var(--krigsvold-layout-split-min);
+  --layout-section-space: var(--krigsvold-layout-section-space);
   --navy-950: var(--krigsvold-color-navy-950);
   --navy-900: var(--krigsvold-color-navy-900);
   --navy-800: var(--krigsvold-color-navy-800);

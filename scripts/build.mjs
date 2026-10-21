@@ -2,12 +2,12 @@ import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {dirname,join} from 'node:path';
 import {vimTheme,vimDispatcher,emacsTheme,chromeTheme,firefoxTheme,highlightCSS} from './app-ports.mjs';
 const data=JSON.parse(await readFile('source.json','utf8'));
-const {family,label,version,themes,heritage,design,foundation,capabilities,kind}=data;
+const {family,label,version,themes,heritage,design,foundation,capabilities,layout,kind}=data;
 const outputs=new Map();
 const json=x=>JSON.stringify(x,null,2)+'\n';
 const rule=t=>`[data-${family}="${t.mode}"] {\n  color-scheme: ${t.mode};\n${Object.entries(t.tokens).map(([k,v])=>`  --${family}-${k}: ${v.toLowerCase()};`).join('\n')}\n}\n`;
 if(kind==='npm'){
- const value={name:label,version,heritage,design,foundation,capabilities,themes};
+ const value={name:label,version,heritage,design,foundation,capabilities,layout,themes};
  outputs.set('dist/tokens.json',json(value));
  outputs.set('dist/theme.css',Object.values(themes).map(rule).join('\n'));
  for(const t of Object.values(themes)){
@@ -15,10 +15,10 @@ if(kind==='npm'){
   outputs.set(`dist/${t.mode}.json`,json({version,...t}));
   outputs.set(`dist/highlight-${t.mode}.css`,highlightCSS(t,version));
  }
- const shared=`const data = ${JSON.stringify(value)};\nconst {themes,heritage,design,foundation,capabilities,version}=data;\nconst {light,dark}=themes;\n`;
- outputs.set('dist/index.js',shared+'export {themes,light,dark,heritage,design,foundation,capabilities,version};\nexport default themes;\n');
- outputs.set('dist/index.cjs',shared+'module.exports={themes,light,dark,heritage,design,foundation,capabilities,version,default:themes};\n');
- outputs.set('dist/index.d.ts',`export interface Theme { readonly id: string; readonly name: string; readonly mode: 'light' | 'dark'; readonly tokens: Readonly<Record<string,string>>; }\nexport declare const themes: {readonly light: Theme; readonly dark: Theme};\nexport declare const light: Theme;\nexport declare const dark: Theme;\nexport declare const version: string;\nexport declare const heritage: Readonly<Record<string,string>>;\nexport declare const design: { readonly radius: Readonly<Record<string,string>>; readonly spacing: Readonly<Record<string,string>>; readonly fonts: Readonly<Record<string,string>> };\nexport declare const foundation: { readonly origin: string; readonly tokens: Readonly<Record<string,string>>; readonly typographyRoles: Readonly<Record<string,unknown>> };\nexport declare const capabilities: Readonly<Record<string,unknown>>;\nexport default themes;\n`);
+ const shared=`const data = ${JSON.stringify(value)};\nconst {themes,heritage,design,foundation,capabilities,layout,version}=data;\nconst {light,dark}=themes;\n`;
+ outputs.set('dist/index.js',shared+'export {themes,light,dark,heritage,design,foundation,capabilities,layout,version};\nexport default themes;\n');
+ outputs.set('dist/index.cjs',shared+'module.exports={themes,light,dark,heritage,design,foundation,capabilities,layout,version,default:themes};\n');
+ outputs.set('dist/index.d.ts',`export interface Theme { readonly id: string; readonly name: string; readonly mode: 'light' | 'dark'; readonly tokens: Readonly<Record<string,string>>; }\nexport declare const themes: {readonly light: Theme; readonly dark: Theme};\nexport declare const light: Theme;\nexport declare const dark: Theme;\nexport declare const version: string;\nexport declare const heritage: Readonly<Record<string,string>>;\nexport declare const design: { readonly radius: Readonly<Record<string,string>>; readonly spacing: Readonly<Record<string,string>>; readonly fonts: Readonly<Record<string,string>> };\nexport declare const foundation: { readonly origin: string; readonly tokens: Readonly<Record<string,string>>; readonly typographyRoles: Readonly<Record<string,unknown>> };\nexport declare const layout: {readonly schemaVersion: number; readonly primitives: readonly string[]; readonly compositions: readonly string[]; readonly defaults: Readonly<Record<string,string | number>>; readonly tokens: Readonly<Record<string,string>>; readonly sources: readonly {readonly url: string; readonly repository: string; readonly commit: string; readonly files: readonly string[]}[]; readonly normalization: Readonly<Record<string,string>>};\nexport declare const capabilities: Readonly<Record<string,unknown>>;\nexport default themes;\n`);
 }
 if(kind==='vim'){
  for(const t of Object.values(themes)) outputs.set(`colors/${t.id}.vim`,vimTheme(t,version));

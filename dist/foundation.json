@@ -80,7 +80,15 @@
     "breakpoint-md": "768px",
     "breakpoint-lg": "992px",
     "breakpoint-xl": "1200px",
-    "breakpoint-xxl": "1400px"
+    "breakpoint-xxl": "1400px",
+    "layout-gap": "2rem",
+    "layout-gap-small": "1rem",
+    "layout-gap-large": "3rem",
+    "layout-sidebar-width": "20rem",
+    "layout-main-min": "30rem",
+    "layout-grid-min": "20rem",
+    "layout-split-min": "22rem",
+    "layout-section-space": "clamp(4.5rem, 8vw, 7.5rem)"
   },
   "typographyRoles": {
     "serif": {

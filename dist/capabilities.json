@@ -6,7 +6,8 @@
       "spacing",
       "shape",
       "depth",
-      "interaction variables"
+      "interaction variables",
+      "layout primitives"
     ],
     "optional": [
       "font loading",
@@ -21,7 +22,13 @@
       "container",
       "section heading",
       "card",
-      "button"
+      "button",
+      "page header",
+      "site header",
+      "site footer",
+      "article layout",
+      "landing layout",
+      "documentation layout"
     ],
     "hostOwned": [
       "navigation",
