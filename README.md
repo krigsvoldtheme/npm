@@ -46,3 +46,7 @@ Application port generators in `krigsvoldtheme/krigsvoldtheme` consume this pack
 ## Layouts
 
 Version 2.1 adds optional [`layout.css`](docs/layout.md), the `layout` JavaScript export, and `layout.json`. Layout primitives cover containers, vertical stacks, wrapping clusters, bounded grids, sidebars, and paired regions. Import `@krigsvold/theme/full.css` for the complete styling layer or add `@krigsvold/theme/layout.css` after `foundation.css` for structural classes alone. See [source observations and responsive rules](docs/layout.md).
+
+## Releases
+
+Stable GitHub releases can publish automatically through npm trusted publishing. See [release setup](docs/releasing.md) for the one-time package authorization and release order.
