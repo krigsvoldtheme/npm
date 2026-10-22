@@ -1,8 +1,8 @@
 # Krigsvold design charter
 
-Draft 0.1 for review · October 21, 2026
+Version 1.0 · Adopted October 21, 2026
 
-This charter proposes the direction for Krigsvold's development as a complete design system. Its starting observation is agreed: Krigsvold feels icy. The meaning of that character is still developing; the principles below make it specific enough to explore and evaluate. Existing package contracts remain in force; this document introduces no token, API, or compatibility changes and does not imply that the proposed component inventory has shipped.
+This charter establishes the direction for Krigsvold's development as a complete design system. Its starting observation is agreed: Krigsvold feels icy. The meaning of that character is still developing; the principles below make it specific enough to explore and evaluate. Existing package contracts remain in force; this document introduces no token, API, or compatibility changes and does not imply that the proposed component inventory has shipped.
 
 ## Purpose and character
 

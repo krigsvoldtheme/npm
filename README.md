@@ -4,7 +4,7 @@
 
 ## Design direction
 
-For the proposed design direction and criteria for expanding the system, read the [Krigsvold design charter](docs/charter.md).
+For the design direction and criteria for expanding the system, read the [Krigsvold design charter](docs/charter.md).
 
 ## Choose what to adopt
 
