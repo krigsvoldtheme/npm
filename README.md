@@ -54,3 +54,7 @@ Version 2.1 adds optional [`layout.css`](docs/layout.md), the `layout` JavaScrip
 ## Releases
 
 Stable GitHub releases can publish automatically through npm trusted publishing. See [release setup](docs/releasing.md) for the one-time package authorization and release order.
+
+## Foundations specification
+
+Read the [working foundations specification](docs/foundations.md) for spacing relationships, responsive composition, typography, density, surfaces, motion, accessibility, and the distinction between shipped values and proposed application roles.
