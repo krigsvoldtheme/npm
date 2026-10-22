@@ -38,9 +38,19 @@ Krigsvold and Martlet share blue, white, gold, order, and restraint. Their diffe
 
 Share interaction contracts, accessibility work, tests, and tooling where practical. Keep independent judgments about typography, spatial organization, surfaces, and visual emphasis. Krigsvold's icy character needs to be recognizable beyond its palette or a distinctive hero. Neither family is restricted to institutional or editorial work.
 
+## Living baselines
+
+[krigsvold.org](https://krigsvold.org/) is the starting ground truth for Krigsvold and remains a live baseline throughout the system's development. Its real content, tasks, and ongoing use provide evidence for design decisions. The baseline describes what works today and can evolve as generalization exposes better solutions.
+
+An inherited decision that fails when generalized should be removed or revised. Establish a working replacement against both the originating site's real usage and the broader conditions that exposed the failure. Historical fidelity does not justify retaining a design that no longer works.
+
+Carry the validated improvement into the packages and specifications, then back into the originating website. Verify the revised site in use so it becomes the next live baseline. Record the failure, the replacement, and the reasons for the change, and follow the release and migration requirements of affected contracts.
+
+This feedback loop continues throughout development: observe real use, generalize, test, replace what fails, and improve the baseline. Controlled examples and automated checks support that work; they cannot establish real-world fitness on their own.
+
 ## Evidence and review
 
-The next milestone is four comparative experiences: an article with supporting material, a substantial form, a searchable collection, and an application dashboard. Give both families the same content and functionality. With brand marks removed, review whether Krigsvold's structure, rhythm, and emphasis still convey its character. Check that generous regional spacing and any compact local density remain useful at narrow widths and with enlarged text.
+The next milestone is four comparative experiences: an article with supporting material, a substantial form, a searchable collection, and an application dashboard. Ground these comparisons in real content and tasks, and give both families the same content and functionality. Continue evaluating changes against the live baseline while exploring contexts beyond it. With brand marks removed, review whether Krigsvold's structure, rhythm, and emphasis still convey its character. Check that generous regional spacing and any compact local density remain useful at narrow widths and with enlarged text.
 
 The live sites should exercise the system as consumers. Move reusable decisions into the packages and specifications while keeping site identity, navigation, routing, content, analytics, and consent policy with the host. Examples embedded in a site should use its shared page shell. Standalone starters should make their purpose clear.
 
