@@ -2,6 +2,10 @@
 
 `@krigsvold/theme` is the framework-independent source of truth for Krigsvold. It contains Light/Dark semantic colors and the typography, spacing, shape, depth, and interaction definitions extracted from krigsvold.org.
 
+## Design direction
+
+For the design direction and criteria for expanding the system, read the [Krigsvold design charter](docs/charter.md).
+
 ## Choose what to adopt
 
 | Import | Effect |
