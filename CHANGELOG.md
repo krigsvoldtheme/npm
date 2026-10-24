@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased — source consolidation
+
+- Add versioned source guidance, optional source roles, and contents/footer pattern support. Existing defaults remain compatible; see docs/consolidation.md.
+
+
 ## 2.1.0
 
 - Add optional framework-independent layout primitives and a layout specification with provenance from both live consumers.
