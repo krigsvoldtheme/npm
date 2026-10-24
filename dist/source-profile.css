@@ -8,15 +8,16 @@
   --krigsvold-source-heading:var(--krigsvold-color-navy-900);
   --krigsvold-source-support:var(--krigsvold-color-ice-100);
   --krigsvold-source-label:var(--krigsvold-color-blue-600);
+  --krigsvold-source-button-bg:var(--krigsvold-color-navy-950); --krigsvold-source-button-hover:var(--krigsvold-color-blue-600); --krigsvold-source-button-text:white;
 }
 .krigsvold-source-profile .krigsvold-prose { font-size:var(--krigsvold-text-body); line-height:var(--krigsvold-leading-body); }
 .krigsvold-source-profile :where(h1,h2,h3) { color:var(--krigsvold-source-heading,var(--krigsvold-text-strong)); }
 .krigsvold-source-profile .krigsvold-page-header__copy::after { display:none; }
 .krigsvold-source-profile { font-size:1rem; }
-.krigsvold-source-profile[data-krigsvold="light"] .krigsvold-button, [data-krigsvold="light"] .krigsvold-source-profile .krigsvold-button { background:var(--krigsvold-color-navy-950); border-color:var(--krigsvold-color-navy-950); color:white; }
-.krigsvold-source-profile[data-krigsvold="light"] .krigsvold-button:hover, [data-krigsvold="light"] .krigsvold-source-profile .krigsvold-button:hover { background:var(--krigsvold-color-blue-600); }
+.krigsvold-source-profile .krigsvold-button:not(:disabled) { background:var(--krigsvold-source-button-bg,var(--krigsvold-accent)); border-color:var(--krigsvold-source-button-bg,var(--krigsvold-accent)); color:var(--krigsvold-source-button-text,var(--krigsvold-on-accent)); }
+.krigsvold-source-profile .krigsvold-button:not(:disabled):hover { background:var(--krigsvold-source-button-hover,var(--krigsvold-accent-hover)); }
 .krigsvold-source-profile .krigsvold-prose :where(blockquote) { border-inline-start:4px solid var(--krigsvold-color-blue-600); padding-inline-start:1.2rem; font-family:var(--krigsvold-font-serif); }
 
-[data-krigsvold="dark"] { --krigsvold-source-ink:var(--krigsvold-text); --krigsvold-source-heading:var(--krigsvold-text-strong); --krigsvold-source-support:var(--krigsvold-panel); --krigsvold-source-label:var(--krigsvold-accent); }
+[data-krigsvold="dark"] { --krigsvold-source-ink:var(--krigsvold-text); --krigsvold-source-heading:var(--krigsvold-text-strong); --krigsvold-source-support:var(--krigsvold-panel); --krigsvold-source-label:var(--krigsvold-accent); --krigsvold-source-button-bg:var(--krigsvold-accent); --krigsvold-source-button-hover:var(--krigsvold-accent-hover); --krigsvold-source-button-text:var(--krigsvold-on-accent); }
 
 .krigsvold-source-profile .krigsvold-page-header { background:transparent; color:var(--krigsvold-source-ink,var(--krigsvold-text)); }
