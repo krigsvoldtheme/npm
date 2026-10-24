@@ -58,3 +58,7 @@ Stable GitHub releases can publish automatically through npm trusted publishing.
 ## Foundations specification
 
 Read the [working foundations specification](docs/foundations.md) for spacing relationships, responsive composition, typography, density, surfaces, motion, accessibility, and the distinction between shipped values and proposed application roles.
+
+## Consolidated language candidate
+
+[Grammar](docs/grammar.md), [source decisions](docs/source-decisions.md), [framework and migration guide](docs/consolidation.md), and [machine-readable support](language.json) describe the unreleased core 2.2.0 / Astro 1.2.0 consolidation. Existing defaults remain compatible; the source profile is opt-in.

@@ -1,6 +1,6 @@
 {
   "name": "@krigsvold/theme",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": false,
   "type": "module",
   "license": "MIT",
@@ -48,7 +48,10 @@
     "./package.json": "./package.json",
     "./legacy.css": "./dist/legacy.css",
     "./layout.css": "./dist/layout.css",
-    "./layout.json": "./dist/layout.json"
+    "./layout.json": "./dist/layout.json",
+    "./patterns.css": "./dist/patterns.css",
+    "./source-profile.css": "./dist/source-profile.css",
+    "./language.json": "./dist/language.json"
   },
   "publishConfig": {
     "access": "public"

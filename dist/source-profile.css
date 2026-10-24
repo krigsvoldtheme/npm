@@ -1,0 +1,22 @@
+/* Opt-in source translation. Existing semantic palettes and default primitives are unchanged. */
+.krigsvold-source-profile {
+  --krigsvold-field-gap:.5rem; --krigsvold-group-gap:1.5rem; --krigsvold-region-gap:3rem;
+  color:var(--krigsvold-source-ink,var(--krigsvold-text));
+}
+[data-krigsvold="light"] {
+  --krigsvold-source-ink:var(--krigsvold-color-ink);
+  --krigsvold-source-heading:var(--krigsvold-color-navy-900);
+  --krigsvold-source-support:var(--krigsvold-color-ice-100);
+  --krigsvold-source-label:var(--krigsvold-color-blue-600);
+}
+.krigsvold-source-profile .krigsvold-prose { font-size:var(--krigsvold-text-body); line-height:var(--krigsvold-leading-body); }
+.krigsvold-source-profile :where(h1,h2,h3) { color:var(--krigsvold-source-heading,var(--krigsvold-text-strong)); }
+.krigsvold-source-profile .krigsvold-page-header__copy::after { display:none; }
+.krigsvold-source-profile { font-size:1rem; }
+.krigsvold-source-profile[data-krigsvold="light"] .krigsvold-button, [data-krigsvold="light"] .krigsvold-source-profile .krigsvold-button { background:var(--krigsvold-color-navy-950); border-color:var(--krigsvold-color-navy-950); color:white; }
+.krigsvold-source-profile[data-krigsvold="light"] .krigsvold-button:hover, [data-krigsvold="light"] .krigsvold-source-profile .krigsvold-button:hover { background:var(--krigsvold-color-blue-600); }
+.krigsvold-source-profile .krigsvold-prose :where(blockquote) { border-inline-start:4px solid var(--krigsvold-color-blue-600); padding-inline-start:1.2rem; font-family:var(--krigsvold-font-serif); }
+
+[data-krigsvold="dark"] { --krigsvold-source-ink:var(--krigsvold-text); --krigsvold-source-heading:var(--krigsvold-text-strong); --krigsvold-source-support:var(--krigsvold-panel); --krigsvold-source-label:var(--krigsvold-accent); }
+
+.krigsvold-source-profile .krigsvold-page-header { background:transparent; color:var(--krigsvold-source-ink,var(--krigsvold-text)); }
