@@ -63,7 +63,7 @@ The complete [foundation JSON](../dist/foundation.json) and [layout contract](..
 
 Use small layout spacing inside a related group, regular spacing between sibling groups, and large spacing between distinct tasks. Public reading pages use the shipped section spacing; an application does not inherit a public hero's vertical padding merely because it has a title. Margins on content must not double the parent's layout gap. A nested layout establishes its own spacing context.
 
-The initial React workbench proposes `field-gap`, `group-gap`, `region-gap`, `page-gutter`, and `row-padding` as application roles. These aliases live in the experimental React styles, not in the stable theme contract. Measure the distinction between fields, groups, and regions during real registry work before promoting them. Never compress an interface simply to fit more rows.
+The initial React workbench proposes `field-gap`, `group-gap`, `region-gap`, `page-gutter`, and `row-padding` as application roles. The 2.2.0 candidate also exposes the field/group/region aliases in an opt-in source profile. These assignments remain experimental and do not alter the stable reference scale. Measure the distinction between fields, groups, and regions during real registry work before promoting them. Never compress an interface simply to fit more rows.
 
 ## Responsive composition
 
@@ -75,11 +75,11 @@ At 320 CSS pixels and at 400% zoom on a 1280-pixel viewport, navigation wraps, f
 
 Use the documented font roles and unitless line heights. Application fields, tables, and navigation use the sans family. Preserve a clear heading-to-body hierarchy without applying public hero sizes to an editor panel. Text must remain usable at 200% resizing and with user text-spacing overrides. Labels remain visible when a field contains a value.
 
-This specification recognizes comfortable density only. Compact density is proposed and requires a real high-volume task before adoption. Control hit areas remain at least 44 by 44 CSS pixels in the new React implementation. A denser row changes padding and hierarchy, never silently shrinks interaction targets or body text. Existing smaller legacy controls need review rather than retrospective certification.
+This specification recognizes comfortable density only. Compact density is proposed and requires a real high-volume task before adoption. New standalone actions should target 44 by 44 CSS pixels where practical. This is a design target, not a measured claim about every existing link or control. Assess WCAG 2.2 target sizing at 24 by 24 CSS pixels or a documented exception; inspect adjacent target spacing and inline/native exceptions in the actual composition. A denser row changes padding and hierarchy, never silently shrinks interaction targets or body text. Existing smaller legacy controls need review rather than retrospective certification.
 
 ## Surfaces and layering
 
-Use semantic canvas, subtle, sunken, and overlay colors from the theme. Flat surfaces and rules establish most structure. Shadow tokens exist but do not justify elevating every section. Overlay content requires a backdrop, an accessible name, and an explicit dismissal path.
+Use semantic canvas, subtle, sunken, and overlay colors from the theme. Flat surfaces and rules establish most structure. Shadow tokens exist but do not justify elevating every section. Modal dialog content needs an accessible name, a clear dismissal path and modal background treatment. Non-modal popups and disclosures retain their own interaction contracts; they do not automatically require a backdrop or focus trap.
 
 Proposed application layers are base 0, sticky context 10, and transient non-modal feedback 20. Native modal dialogs use the browser top layer and must not depend on a fabricated large z-index. Sticky regions may not obscure focused controls or error summaries. Avoid sticky layout on small screens unless it remains usable at zoom.
 
@@ -102,3 +102,7 @@ Before a foundation becomes stable, document its consumers, browser and assistiv
 ## Source reconciliation and consolidation
 
 The October 23 source audit refines this working specification. Use [source decisions](source-decisions.md) for observed objects, [grammar](grammar.md) for experimental application relationships, and [consolidation](consolidation.md) for opt-in profiles and framework support. The shipped 2.1.0 measurements above are historical baseline values, not proof that all defaults match the observed source cascade. The 2.2.0 candidate adds opt-in relationship aliases without promoting them to stable foundation requirements.
+
+## Coverage review 0.3
+
+The [coverage ledger](coverage.md) records the reviewed domains, corrections, focused form/results contracts and remaining evidence. The new references supply controlled state coverage, not sustained production use. Target-sizing interpretation follows [W3C SC 2.5.8](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html).

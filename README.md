@@ -62,3 +62,5 @@ Read the [working foundations specification](docs/foundations.md) for spacing re
 ## Consolidated language candidate
 
 [Grammar](docs/grammar.md), [source decisions](docs/source-decisions.md), [framework and migration guide](docs/consolidation.md), and [machine-readable support](language.json) describe the unreleased core 2.2.0 / Astro 1.2.0 consolidation. Existing defaults remain compatible; the source profile is opt-in.
+
+[Grammar coverage review](docs/coverage.md), [validated forms](docs/patterns/forms.md), and [query/results patterns](docs/patterns/query-results.md) extend the experimental grammar to 0.3.
