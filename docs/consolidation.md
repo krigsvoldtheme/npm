@@ -1,6 +1,6 @@
 # Krigsvold consolidation
 
-Core 2.2.0 and Astro 1.2.0 are **experimental release candidates**. Existing theme colors, typography defaults, component defaults, and Astro slots are retained. Do not install an unpublished version from npm. Use the paired review branches or packed archives to evaluate this change.
+Core 2.2.1 and Astro 1.2.1 provide the experimental consolidation. Use the `next` dist-tags or explicit versions when adopting it: `npm install @krigsvold/theme@next @krigsvold/astro@next`. Check registry availability rather than inferring it from a source checkout. Existing theme defaults and Astro slots retain their contracts.
 
 The core owns [grammar](grammar.md), [source decisions](source-decisions.md), [foundation requirements](foundations.md), `language.json`, and framework-independent pattern CSS. Astro owns rendering and slots. React owns its events, controlled state and focus APIs. Documentation and agent references must identify the exact guidance revision. Publication does not establish grammar stability.
 
@@ -27,3 +27,7 @@ Preserve native semantics, focus visibility, retained input, actionable validati
 ## Experimental distribution
 
 The GitHub pre-release publishes the verified package under npm’s `next` dist-tag. The existing `latest` tag stays unchanged. An experimental publication does not establish grammar stability or manual assistive-technology conformance. Promote a release only through a separate reviewed release decision.
+
+Publication status is intentionally separate from implementation maturity. A canonical guidance snapshot records its own revision; it does not discover live registry state.
+
+Astro SiteHeader retains its existing generic wrapping-link rendering. It is not the audited source-site masthead or a menu controller. Host styling and responsive navigation remain explicit integration work. Astro contents remain in print by default; do not transfer the React print rule to Astro.

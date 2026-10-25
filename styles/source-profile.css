@@ -20,4 +20,4 @@
 
 [data-krigsvold="dark"] { --krigsvold-source-ink:var(--krigsvold-text); --krigsvold-source-heading:var(--krigsvold-text-strong); --krigsvold-source-support:var(--krigsvold-panel); --krigsvold-source-label:var(--krigsvold-accent); --krigsvold-source-button-bg:var(--krigsvold-accent); --krigsvold-source-button-hover:var(--krigsvold-accent-hover); --krigsvold-source-button-text:var(--krigsvold-on-accent); }
 
-.krigsvold-source-profile .krigsvold-page-header { background:transparent; color:var(--krigsvold-source-ink,var(--krigsvold-text)); }
+.krigsvold-source-profile .krigsvold-page-header { border-block-end:0; background:transparent; color:var(--krigsvold-source-ink,var(--krigsvold-text)); }

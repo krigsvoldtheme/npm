@@ -59,8 +59,8 @@ Stable GitHub releases can publish automatically through npm trusted publishing.
 
 Read the [working foundations specification](docs/foundations.md) for spacing relationships, responsive composition, typography, density, surfaces, motion, accessibility, and the distinction between shipped values and proposed application roles.
 
-## Consolidated language candidate
+## Experimental UI language
 
-[Grammar](docs/grammar.md), [source decisions](docs/source-decisions.md), [framework and migration guide](docs/consolidation.md), and [machine-readable support](language.json) describe the unreleased core 2.2.0 / Astro 1.2.0 consolidation. Existing defaults remain compatible; the source profile is opt-in.
+[Grammar](docs/grammar.md), [source decisions](docs/source-decisions.md), [framework and migration guide](docs/consolidation.md), and [machine-readable support](language.json) describe the experimental core 2.2.1 / Astro 1.2.1 consolidation. Existing defaults remain compatible; the source profile is opt-in.
 
 [Grammar coverage review](docs/coverage.md), [validated forms](docs/patterns/forms.md), and [query/results patterns](docs/patterns/query-results.md) extend the experimental grammar to 0.3.
