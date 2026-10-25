@@ -5,8 +5,9 @@ const json=async p=>JSON.parse(await readFile(p,'utf8'));
 test('source profile and pattern exports are additive and build deterministically',async()=>{
  const pkg=await json('package.json'), language=await json('dist/language.json');
  assert.deepEqual(language,await json('language.json'));
+ assert.equal((await import('../dist/index.js')).version,pkg.version);assert.equal((await json('source.json')).version,pkg.version);
  assert.equal(language.family,'krigsvold');assert.equal(language.maturity,'experimental');
- assert.equal(language.implementation.Astro.status,'unreleased-candidate');
+ assert.equal(language.implementation.Astro.status,'experimental');
  for(const name of ['patterns','source-profile']) {
   assert.equal(pkg.exports['./'+name+'.css'],'./dist/'+name+'.css');
   assert.equal(await readFile('dist/'+name+'.css','utf8'),await readFile('styles/'+name+'.css','utf8'));

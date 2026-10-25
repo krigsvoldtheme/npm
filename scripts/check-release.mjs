@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 const pkg=JSON.parse(await readFile(new URL('../package.json',import.meta.url),'utf8'));
+assert.equal(JSON.parse(await readFile(new URL('../source.json',import.meta.url),'utf8')).version,pkg.version,'Canonical token source and package version must agree');
 assert.match(pkg.version,/^\d+\.\d+\.\d+$/,'Only stable versions are published by this workflow');
 assert.equal(process.env.RELEASE_TAG,'v'+pkg.version,'Release tag must match package.json');
 const repository=pkg.repository.url.replace(/^git\+/,'').replace(/\.git$/,'');
