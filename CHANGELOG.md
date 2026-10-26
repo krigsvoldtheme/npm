@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.3 — nested appearance repair
+
+- Recompute inherited source action roles at nested appearance boundaries, including scopes that do not repeat the source-profile class. Retain secondary and disabled action precedence.
+
 ## 2.2.2 — adoption repair preview
 
 - Repair source-profile button contrast and role overrides, Martlet dark eyebrow contrast, and native choice-control geometry. Add documented native form classes and direct-HTML anatomy; retain host controllers. Correct supported reading composition.

@@ -1,5 +1,5 @@
 /* Opt-in source translation. Existing semantic palettes and default primitives are unchanged. */
-.krigsvold-source-profile {
+.krigsvold-source-profile, .krigsvold-source-profile :where([data-krigsvold]) {
   --krigsvold-button-bg:var(--krigsvold-source-button-bg,var(--krigsvold-accent));
   --krigsvold-button-hover:var(--krigsvold-source-button-hover,var(--krigsvold-accent-hover));
   --krigsvold-button-text:var(--krigsvold-source-button-text,var(--krigsvold-on-accent));

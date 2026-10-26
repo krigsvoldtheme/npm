@@ -61,12 +61,12 @@ Read the [working foundations specification](docs/foundations.md) for spacing re
 
 ## Experimental UI language
 
-[Grammar](docs/grammar.md), [source decisions](docs/source-decisions.md), [framework and migration guide](docs/consolidation.md), and [machine-readable support](language.json) describe the experimental core 2.2.2 / Astro 1.2.2 consolidation. Existing defaults remain compatible; the source profile is opt-in.
+[Grammar](docs/grammar.md), [source decisions](docs/source-decisions.md), [framework and migration guide](docs/consolidation.md), and [machine-readable support](language.json) describe the experimental core 2.2.3 / Astro 1.2.2 consolidation. Existing defaults remain compatible; the source profile is opt-in.
 
 [Grammar coverage review](docs/coverage.md), [validated forms](docs/patterns/forms.md), and [query/results patterns](docs/patterns/query-results.md) extend the experimental grammar to 0.3.
 
 ## Adoption repair preview
 
-Install `@krigsvold/theme@next` for the experimental 2.2.2 line; `latest` remains the stable 2.1 line. Package, grammar and framework versions are separate: grammar 0.3 is the design contract, core 2.2.2 supplies CSS/tokens, Astro 1.2.2 supplies wrappers, and React 0.1.0 retains its tested core 2.1.0 dependency. Exact package versions belong in the lockfile.
+Install `@krigsvold/theme@next` for the experimental 2.2.3 line; `latest` remains the stable 2.1 line. Package, grammar and framework versions are separate: grammar 0.3 is the design contract, core 2.2.3 supplies CSS/tokens, Astro 1.2.2 supplies wrappers, and React 0.1.0 retains its tested core 2.1.0 dependency. Exact package versions belong in the lockfile.
 
 [Direct HTML anatomy](docs/native-html.md) documents layout/pattern classes. [Native form styling](docs/form-styling.md) documents the optional `forms.css` layer included in `full.css`; behavior remains host-owned. Existing colors/fonts and marks retain their native identity.
