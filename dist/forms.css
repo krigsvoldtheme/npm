@@ -33,7 +33,7 @@
 .krigsvold-dialog::backdrop { background:var(--krigsvold-overlay-scrim); }
 .krigsvold-dialog h2 { margin-block:0 1rem; color:inherit; }
 .krigsvold-actions { display:flex; flex-wrap:wrap; align-items:center; gap:1rem; }
-.krigsvold-form[hidden], .krigsvold-field[hidden], .krigsvold-hint[hidden], .krigsvold-error[hidden], .krigsvold-notice[hidden], .krigsvold-error-summary[hidden], .krigsvold-fieldset[hidden], .krigsvold-actions[hidden] { display:none; }
+.krigsvold-button[hidden], .krigsvold-form[hidden], .krigsvold-field[hidden], .krigsvold-hint[hidden], .krigsvold-error[hidden], .krigsvold-notice[hidden], .krigsvold-error-summary[hidden], .krigsvold-fieldset[hidden], .krigsvold-actions[hidden] { display:none; }
 
 /* Regional grouping is an application choice, not a generic card per field. */
 .krigsvold-fieldset + .krigsvold-fieldset { border-block-start:1px solid var(--krigsvold-border-subtle); padding-block-start:var(--krigsvold-region-gap,3rem); }
