@@ -14,6 +14,7 @@
 .krigsvold-contents--inline > ul { columns:2 16rem; column-gap:2rem; }
 @container krigsvold-reading (min-width:74rem) {
  .krigsvold-reading-layout { grid-template-columns:20rem minmax(0,760px); gap:clamp(2rem,4cqi,5rem); justify-content:center; }
+ .krigsvold-reading-layout--supported { grid-template-columns:20rem minmax(0,1fr); }
  .krigsvold-reading-layout__contents { position:sticky; top:6rem; max-block-size:calc(100vh - 7rem); overflow:auto; }
  .krigsvold-reading-layout .krigsvold-contents--index { background:transparent; padding:1.25rem 0 0; }
 }
@@ -45,3 +46,6 @@
 @media print { .krigsvold-reading-layout { display:block; } .krigsvold-reading-layout__contents { position:static; max-block-size:none; overflow:visible; margin-block-end:2rem; } }
 
 .krigsvold-site-footer__top:not(:has(.krigsvold-site-footer__identity)) .krigsvold-site-footer__groups { grid-column:1 / -1; }
+
+/* A supporting region may widen the body, never the sustained prose measure. */
+.krigsvold-reading-layout--supported .krigsvold-prose { max-inline-size:var(--krigsvold-reading-width); }

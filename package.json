@@ -1,6 +1,6 @@
 {
   "name": "@krigsvold/theme",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "private": false,
   "type": "module",
   "license": "MIT",
@@ -51,7 +51,8 @@
     "./layout.json": "./dist/layout.json",
     "./patterns.css": "./dist/patterns.css",
     "./source-profile.css": "./dist/source-profile.css",
-    "./language.json": "./dist/language.json"
+    "./language.json": "./dist/language.json",
+    "./forms.css": "./dist/forms.css"
   },
   "publishConfig": {
     "access": "public"
@@ -60,7 +61,7 @@
     "type": "git",
     "url": "git+https://github.com/krigsvoldtheme/npm.git"
   },
-  "homepage": "https://krigsvoldtheme.dev/",
+  "homepage": "https://krigsvolddesign.dev/",
   "keywords": [
     "krigsvold",
     "theme",

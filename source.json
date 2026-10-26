@@ -1,7 +1,7 @@
 {
   "family": "krigsvold",
   "label": "Krigsvold",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "themes": {
     "light": {
       "id": "krigsvold-light",
