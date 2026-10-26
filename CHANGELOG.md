@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.2 — adoption repair preview
+
+- Repair source-profile button contrast and role overrides, Martlet dark eyebrow contrast, and native choice-control geometry. Add documented native form classes and direct-HTML anatomy; retain host controllers. Correct supported reading composition.
+
 ## Unreleased — source consolidation
 
 - Add versioned source guidance, optional source roles, and contents/footer pattern support. Existing defaults remain compatible; see docs/consolidation.md.

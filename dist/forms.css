@@ -1,0 +1,39 @@
+/* Experimental native-HTML application extensions; behavior and ARIA belong to the host. */
+.krigsvold-form { display:grid; gap:var(--krigsvold-region-gap,3rem); min-inline-size:0; font:1rem/1.5 var(--krigsvold-font-sans); }
+.krigsvold-field { display:grid; align-content:start; gap:var(--krigsvold-field-gap,.5rem); min-inline-size:0; }
+.krigsvold-field > label, .krigsvold-fieldset > legend { color:var(--krigsvold-text-strong); font:700 .9rem/1.5 var(--krigsvold-font-sans); letter-spacing:.02em; }
+.krigsvold-field :where(input,select,textarea) { inline-size:100%; font:1rem/1.5 var(--krigsvold-font-sans); }
+.krigsvold-field :where(textarea) { resize:vertical; min-block-size:7rem; }
+.krigsvold-field :where(p), .krigsvold-hint, .krigsvold-error { margin:0; }
+.krigsvold-hint { color:var(--krigsvold-text-subtle); font:.875rem/1.5 var(--krigsvold-font-sans); }
+.krigsvold-error { color:var(--krigsvold-danger); font:.875rem/1.5 var(--krigsvold-font-sans); }
+.krigsvold :where(input,select,textarea)[aria-invalid="true"], .krigsvold-fieldset[aria-invalid="true"] { border-color:var(--krigsvold-danger); }
+.krigsvold :where(input,select,textarea):disabled { color:var(--krigsvold-disabled-text); background:var(--krigsvold-disabled-bg); cursor:default; }
+.krigsvold-fieldset { display:grid; gap:var(--krigsvold-group-gap,1.5rem); min-inline-size:0; margin:0; padding:0; border:0; }
+.krigsvold-fieldset > legend { padding:0; margin-block-end:var(--krigsvold-group-gap,1.5rem); }
+.krigsvold-fieldset[aria-invalid="true"] { border-inline-start:3px solid var(--krigsvold-danger); padding-inline-start:1rem; }
+.krigsvold-checkbox, .krigsvold-radio { display:flex; gap:.5rem; align-items:flex-start; min-block-size:var(--krigsvold-control-height); padding-block:.5rem; font:1rem/1.5 var(--krigsvold-font-sans); cursor:pointer; }
+.krigsvold-checkbox input, .krigsvold-radio input { flex:none; inline-size:1.2rem; block-size:1.2rem; min-block-size:0; margin:.15rem 0 0; padding:0; accent-color:var(--krigsvold-accent); }
+.krigsvold-checkbox:has(input:disabled), .krigsvold-radio:has(input:disabled) { color:var(--krigsvold-disabled-text); cursor:default; }
+.krigsvold-button--secondary { background:var(--krigsvold-button-secondary-bg); color:var(--krigsvold-button-secondary-text); border-color:var(--krigsvold-border-strong); }
+.krigsvold-button--secondary:hover { background:var(--krigsvold-button-secondary-hover); color:var(--krigsvold-button-secondary-text); }
+.krigsvold-button--quiet { background:transparent; color:var(--krigsvold-link); border-color:transparent; }
+.krigsvold-button--quiet:hover { background:var(--krigsvold-hover-bg); color:var(--krigsvold-link-hover); }
+.krigsvold-button:disabled { background:var(--krigsvold-disabled-bg); color:var(--krigsvold-disabled-text); border-color:var(--krigsvold-disabled-bg); }
+.krigsvold-button[aria-disabled="true"] { cursor:default; }
+.krigsvold-notice, .krigsvold-error-summary { min-inline-size:0; padding:1rem 1.5rem; border-inline-start:4px solid var(--krigsvold-info); color:var(--krigsvold-info-text); background:var(--krigsvold-info-bg); font:1rem/1.5 var(--krigsvold-font-sans); overflow-wrap:anywhere; }
+.krigsvold-notice--success { border-color:var(--krigsvold-success); color:var(--krigsvold-success-text); background:var(--krigsvold-success-bg); }
+.krigsvold-notice--error, .krigsvold-error-summary { border-color:var(--krigsvold-danger); color:var(--krigsvold-danger-text); background:var(--krigsvold-danger-bg); }
+.krigsvold-error-summary { display:grid; gap:1rem; }
+.krigsvold-error-summary :where(h2,p,ul), .krigsvold-notice :where(h2,p) { margin-block:0; }
+.krigsvold-error-summary h2, .krigsvold-notice h2 { color:inherit; font:700 1.15rem/1.5 var(--krigsvold-font-sans); }
+.krigsvold-error-summary ul { padding-inline-start:1.25rem; }
+.krigsvold-error-summary a, .krigsvold-notice a { color:inherit; text-decoration:underline; }
+.krigsvold-dialog { inline-size:min(32rem,calc(100% - 2rem)); max-inline-size:calc(100% - 2rem); max-block-size:calc(100dvh - 2rem); overflow:auto; padding:1.5rem; border:1px solid var(--krigsvold-border-strong); background:var(--krigsvold-surface-overlay); color:var(--krigsvold-text); font:1rem/1.65 var(--krigsvold-font-sans); }
+.krigsvold-dialog::backdrop { background:var(--krigsvold-overlay-scrim); }
+.krigsvold-dialog h2 { margin-block:0 1rem; color:inherit; }
+.krigsvold-actions { display:flex; flex-wrap:wrap; align-items:center; gap:1rem; }
+.krigsvold-button[hidden], .krigsvold-form[hidden], .krigsvold-field[hidden], .krigsvold-hint[hidden], .krigsvold-error[hidden], .krigsvold-notice[hidden], .krigsvold-error-summary[hidden], .krigsvold-fieldset[hidden], .krigsvold-actions[hidden] { display:none; }
+
+/* Regional grouping is an application choice, not a generic card per field. */
+.krigsvold-fieldset + .krigsvold-fieldset { border-block-start:1px solid var(--krigsvold-border-subtle); padding-block-start:var(--krigsvold-region-gap,3rem); }

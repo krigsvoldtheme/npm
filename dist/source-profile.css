@@ -1,5 +1,8 @@
 /* Opt-in source translation. Existing semantic palettes and default primitives are unchanged. */
 .krigsvold-source-profile {
+  --krigsvold-button-bg:var(--krigsvold-source-button-bg,var(--krigsvold-accent));
+  --krigsvold-button-hover:var(--krigsvold-source-button-hover,var(--krigsvold-accent-hover));
+  --krigsvold-button-text:var(--krigsvold-source-button-text,var(--krigsvold-on-accent));
   --krigsvold-field-gap:.5rem; --krigsvold-group-gap:1.5rem; --krigsvold-region-gap:3rem;
   color:var(--krigsvold-source-ink,var(--krigsvold-text));
 }
@@ -14,8 +17,6 @@
 .krigsvold-source-profile :where(h1,h2,h3) { color:var(--krigsvold-source-heading,var(--krigsvold-text-strong)); }
 .krigsvold-source-profile .krigsvold-page-header__copy::after { display:none; }
 .krigsvold-source-profile { font-size:1rem; }
-.krigsvold-source-profile .krigsvold-button:not(:disabled) { background:var(--krigsvold-source-button-bg,var(--krigsvold-accent)); border-color:var(--krigsvold-source-button-bg,var(--krigsvold-accent)); color:var(--krigsvold-source-button-text,var(--krigsvold-on-accent)); }
-.krigsvold-source-profile .krigsvold-button:not(:disabled):hover { background:var(--krigsvold-source-button-hover,var(--krigsvold-accent-hover)); }
 .krigsvold-source-profile .krigsvold-prose :where(blockquote) { border-inline-start:4px solid var(--krigsvold-color-blue-600); padding-inline-start:1.2rem; font-family:var(--krigsvold-font-serif); }
 
 [data-krigsvold="dark"] { --krigsvold-source-ink:var(--krigsvold-text); --krigsvold-source-heading:var(--krigsvold-text-strong); --krigsvold-source-support:var(--krigsvold-panel); --krigsvold-source-label:var(--krigsvold-accent); --krigsvold-source-button-bg:var(--krigsvold-accent); --krigsvold-source-button-hover:var(--krigsvold-accent-hover); --krigsvold-source-button-text:var(--krigsvold-on-accent); }

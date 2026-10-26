@@ -28,7 +28,7 @@ for (const family of ['roboto','roboto-slab','roboto-mono']) {
   const pkg = require.resolve(`@fontsource/${family}/package.json`);
   await writeFile(`dist/licenses/${family}.txt`, await readFile(new URL('./LICENSE', `file://${pkg}`)));
 }
-await writeFile('dist/full.css', "@import './theme.css';\n@import './foundation.css';\n@import './typography.css';\n@import './components.css';\n@import './layout.css';\n@import './patterns.css';\n");
+await writeFile('dist/full.css', "@import './theme.css';\n@import './foundation.css';\n@import './typography.css';\n@import './components.css';\n@import './layout.css';\n@import './patterns.css';\n@import './forms.css';\n");
 await writeFile('dist/foundation.json', JSON.stringify(foundation,null,2)+'\n');
 await writeFile('dist/capabilities.json', JSON.stringify(source.capabilities,null,2)+'\n');
 await writeFile('dist/design.json', JSON.stringify(design,null,2)+'\n');
@@ -41,5 +41,5 @@ await writeFile('dist/legacy.css', `/* Optional aliases for an existing website 
 await writeFile('dist/layout.css', await readFile(new URL('../styles/layout.css',import.meta.url),'utf8'));
 await writeFile('dist/layout.json', JSON.stringify(source.layout,null,2)+'\n');
 
-for (const name of ['patterns','source-profile']) await writeFile(`dist/${name}.css`, await readFile(new URL(`../styles/${name}.css`, import.meta.url), 'utf8'));
+for (const name of ['patterns','source-profile','forms']) await writeFile(`dist/${name}.css`, await readFile(new URL(`../styles/${name}.css`, import.meta.url), 'utf8'));
 await writeFile('dist/language.json', await readFile(new URL('../language.json', import.meta.url), 'utf8'));
